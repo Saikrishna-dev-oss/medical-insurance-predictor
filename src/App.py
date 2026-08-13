@@ -2,6 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 import warnings
+import os
 
 warnings.filterwarnings("ignore", category = UserWarning)
 
@@ -52,7 +53,11 @@ st.markdown("""
 # --- Model Loading ---
 @st.cache_resource
 def load_model():
-    model_path = "../saved_models/linear_regression_model.pkl"
+    
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    model_path = os.path.join(current_dir, "..", "saved_models", "linear_regression_model.pkl")
+    
     return joblib.load(model_path)
 
 model = load_model()
