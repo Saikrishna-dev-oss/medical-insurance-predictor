@@ -1,3 +1,4 @@
+# Check out the live demo of the application <u>[here](https://medical-insurance-predictor-msk.streamlit.app/)
 # 🏥 HealthQuote AI: Medical Insurance Cost Predictor
 
 An end-to-end machine learning pipeline and interactive web application designed to predict yearly medical insurance premiums based on patient demographics and vitals. 
